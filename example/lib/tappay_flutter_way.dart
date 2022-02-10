@@ -92,7 +92,7 @@ class _TappayFlutterScreenState extends State<TappayFlutterScreen> {
                 maxLength: 16,
                 controller: _cardNumber,
                 validator: (v) => _isCardNumberValid ? null : "卡號不正確",
-                autovalidate: true,
+                // autovalidate: true,
               ),
               Row(
                 children: <Widget>[
@@ -102,7 +102,7 @@ class _TappayFlutterScreenState extends State<TappayFlutterScreen> {
                       controller: _cardMonth,
                       validator: (v) => _isCardMonthValid ? null : "月份不正確",
                       maxLength: 2,
-                      autovalidate: true,
+                      // autovalidate: true,
                     ),
                   ),
                   SizedBox(
@@ -111,7 +111,7 @@ class _TappayFlutterScreenState extends State<TappayFlutterScreen> {
                       controller: _cardYear,
                       maxLength: 2,
                       validator: (v) => _isCardYearValid ? null : "年分不正確",
-                      autovalidate: true,
+                      // autovalidate: true,
                     ),
                   ),
                   Spacer(),
@@ -121,7 +121,7 @@ class _TappayFlutterScreenState extends State<TappayFlutterScreen> {
                       controller: _cardCCV,
                       maxLength: 3,
                       validator: (v) => _isCardCCVValid ? null : "CCV不正確",
-                      autovalidate: true,
+                      // autovalidate: true,
                     ),
                   ),
                 ],
